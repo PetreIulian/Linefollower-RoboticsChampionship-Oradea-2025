@@ -12,3 +12,15 @@ This project is a line-following robot, developed using an ESP32 single-board mi
 5. **Chassis and Mounts** - 3D-printed parts (see 3D Model section) for housing the sensors, motors, and ESP32.
 6. **[Battery](https://hpi-racing.ro/li-po-2s-74v/acumulator-lipo-gens-ace-g-tech-soaring-450mah-74v-30c-2s1p-cu-jst-syp.html)** - Lipo Gens Ace Acumulator - G-Tech Soaring - 450mAh - 7.4V - 30C - 2S1P with JST-SYP
 7. **Miscellaneous** - Jumper wires, connectors, screws, PCB and other hardware for assembly.
+
+### Software Libraries
+- **DRV8835MotorShield** - For motor control.
+- **Bluetooth** - For controlling the robot and transmiting data for debugging and tuning the PID.
+
+## Circuit Diagram
+
+Connect the components as follows:
+- **DRV8835 Motor Driver**: Connect M1DIR, M1PWM, M2DIR, M2PWM pins to custom GPIO pins 32, 33, 26, and 25 respectively.
+- **QTRX-MD-13RC Sensor Array**: Connect the odd sensor pins as the Circuit Diagram shows.
+- **ESP32 Power and Ground**: Ensure a stable power source is connected to the ESP32 and motors.
+
