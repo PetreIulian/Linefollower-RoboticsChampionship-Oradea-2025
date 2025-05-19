@@ -1,5 +1,9 @@
 # Line-following Robot for RoboticsChampionship (2025)
 
+This project is a line-following robot, developed using an ESP32 single-board microcontroller, designed to take part in RoboticsChampionship 2025 in Oradea. The robot uses PID (Proportional-Integral-Derivative) control to adjust its motors based on feedback from a line sensor array.
+
+## Components
+
 ### Hardware
 1. **[ESP32](https://www.optimusdigital.ro/en/esp32-boards/12933-plusivo-esp32-and-ble-compatible-wireless-development-board.html?search_query=esp32&results=38)** - Microcontroller used to process sensor data and control the motors.
 2. **[Pololu DRV8835 Motor Driver](https://www.pololu.com/product/2135)** - Dual motor driver for controlling two motors independently.
