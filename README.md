@@ -17,6 +17,11 @@ This project is a line-following robot, developed using an ESP32 single-board mi
 6. **[Battery](https://hpi-racing.ro/li-po-2s-74v/acumulator-lipo-gens-ace-g-tech-soaring-450mah-74v-30c-2s1p-cu-jst-syp.html)** - Lipo Gens Ace Acumulator - G-Tech Soaring - 450mAh - 7.4V - 30C - 2S1P with JST-SYP
 7. **Miscellaneous** - Jumper wires, connectors, screws, PCB and other hardware for assembly.
 
+### Used Software Applications
+- ** ArduinoIDE
+- **Autodesk Inventor Proffesional 2024
+- **KiCad
+
 ### Software Libraries
 - **DRV8835MotorShield** - For motor control.
 - **Bluetooth** - For controlling the robot and transmiting data for debugging and tuning the PID.
