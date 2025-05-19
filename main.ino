@@ -39,20 +39,20 @@ void print_values(float PID, float left, float right) {
   Serial.println("Sensor Values:");
   for(uint8_t i = 0; i < SENSOR_COUNT; ++i) {
     uint8_t sensorValue = digitalRead(sensorPins[i]);
-    Serial.print("Sensor ");
-    Serial.print(i + 1);
-    Serial.print(" (Pin ");
-    Serial.print(sensorPins[i]);
-    Serial.print("): ");
-    Serial.println(sensorValue);
+    BTSerial.print("Sensor ");
+    BTSerial.print(i + 1);
+    BTSerial.print(" (Pin ");
+    BTSerial.print(sensorPins[i]);
+    BTSerial.print("): ");
+    BTSerial.println(sensorValue);
   }
-  Serial.print("PID: ");
-  Serial.println(PID);
-  Serial.print("Left Motor Speed: ");
-  Serial.println(left);
-  Serial.print("Right Motor Speed: ");
-  Serial.println(right);
-  Serial.println("------------------------");
+  BTSerial.print("PID: ");
+  BTSerial.println(PID);
+  BTSerial.print("Left Motor Speed: ");
+  BTSerial.println(left);
+  BTSerial.print("Right Motor Speed: ");
+  BTSerial.println(right);
+  BTSerial.println("------------------------");
 }
 
 //Error Function
@@ -72,7 +72,7 @@ double Calculate_Error() {
   }
 
   //Deadzone
-  if (abs(error) < 0.15) {
+  if (abs(error) < 0.15) { //Adjustable filed depending on your linesensor array specification
     error = 0;
   }
 
@@ -91,8 +91,8 @@ double PID(double error) {
 
 void setup() {
   
-  //Serial.begin(115200);
-  //delay(400);
+  Serial.begin(115200);
+  delay(400);
 
   for (int i = 0; i < SENSOR_COUNT; i++) {
     pinMode(sensorPins[i], INPUT);
@@ -133,7 +133,7 @@ void loop() {
     motors.setM1Speed(left);
     motors.setM2Speed(right);
 
-    //print_values(correction, left, right);
+    print_values(correction, left, right);
 
     delay(10);
   }  
