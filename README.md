@@ -24,3 +24,7 @@ Connect the components as follows:
 - **QTRX-MD-13RC Sensor Array**: Connect the odd sensor pins as the Circuit Diagram shows.
 - **ESP32 Power and Ground**: Ensure a stable power source is connected to the ESP32 and motors.
 
+## 3D Model
+
+The chassis and sensor mounts are designed to be 3D-printed for robustness and optimal sensor positioning. The STL files for 3D printing can be found in the `3d-models` folder of this repository.
+
