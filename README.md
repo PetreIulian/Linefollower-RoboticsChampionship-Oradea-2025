@@ -2,6 +2,10 @@
 
 This project is a line-following robot, developed using an ESP32 single-board microcontroller, designed to take part in RoboticsChampionship 2025 in Oradea. The robot uses PID (Proportional-Integral-Derivative) control to adjust its motors based on feedback from a line sensor array.
 
+## Features
+
+- **PID Control**: The robot uses PID to adjust motor speeds for smooth and precise line-following.
+
 ## Components
 
 ### Hardware
@@ -27,4 +31,10 @@ Connect the components as follows:
 ## 3D Model
 
 The chassis and sensor mounts are designed to be 3D-printed for robustness and optimal sensor positioning. The STL files for 3D printing can be found in the `3d-models` folder of this repository.
+
+## Tuning the PID Control
+- **Base Speed**: Sets the default motor speed.
+- **Kp, Ki, Kd**: PID control values to balance proportional, integral, and derivative responses.
+- **Sensor Weights**: Modifiable weights for each sensor position to enhance control accuracy.
+
 
