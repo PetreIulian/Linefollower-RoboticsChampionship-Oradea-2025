@@ -35,7 +35,7 @@ Connect the components as follows:
 
 ## 3D Model
 
-The chassis and sensor mounts are designed to be 3D-printed for robustness and optimal sensor positioning. The STL files for 3D printing can be found in the `3d-model` file in this repository.
+The chassis and sensor mounts are designed to be 3D-printed for robustness and optimal sensor positioning. The STEP files for 3D printing can be found in the `3d-model` file in this repository.
 
 ## Tuning the PID Control
 - **Base Speed**: Sets the default motor speed.
