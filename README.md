@@ -18,9 +18,9 @@ This project is a line-following robot, developed using an ESP32 single-board mi
 7. **Miscellaneous** - Jumper wires, connectors, screws, PCB and other hardware for assembly.
 
 ### Used Software Applications
-- ** ArduinoIDE
-- **Autodesk Inventor Proffesional 2024
-- **KiCad
+- **ArduinoIDE**
+- **Autodesk Inventor Proffesional 2024**
+- **KiCad**
 
 ### Software Libraries
 - **DRV8835MotorShield** - For motor control.
