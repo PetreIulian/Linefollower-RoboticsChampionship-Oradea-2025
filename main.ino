@@ -1,3 +1,8 @@
+/*
+    * Copyright (C) 2025 by Petre Ioan-Iulian
+    * 611AB UNSTPB-FIIR SIA-II
+*/
+
 #include <DRV8835MotorShield.h>
 #include "BluetoothSerial.h"
 
